@@ -1,0 +1,145 @@
+1:
+#proghram to display vandemataram:
+class Display:
+    def __init__(self):
+        print("vandemataram")
+#instantiate the object
+d=Display()	
+
+
+
+2:
+#Aim: program to display vandemataram 10 times
+#Date=2/3/23
+#author=vinathi
+class Display:
+# constructor
+    def __init__(self):
+        self.c=1           #here c is instant variable
+    def process(self):
+        while self.c<=10:
+           print('vandemataram')
+           self.c=self.c+1
+#instantiate the object
+d=Display()
+d.process()
+
+
+
+3:
+class DisplayNTimes:
+    def __init__(self):
+        self.c=1
+    def accept(self):
+        self.n=int(input("enter n "))
+    def process(self):
+        while self.c<=self.n:
+            print("vandemataram")
+            self.c=self.c+1
+d=DisplayNTimes()3:
+class DisplayNTimes:
+    def __init__(self):
+        self.c=1
+    def accept(self):
+        self.n=int(input("enter n "))
+    def process(self
+d.accept()
+d.process()
+
+
+
+
+4:
+#Aim:program to display numbers from 1 to n
+class DisplayNTimes:
+    def __init__(self):
+        self.c=1
+    def accept(self):
+        self.n=int(input("Enter the number of times to display"))
+    def process(self):
+        while self.c<=self.n:
+            print(self.c)
+            self.c=self.c+1
+#initiate of obj
+d=DisplayNTimes()
+d.accept()
+d.process()
+
+
+
+5:numbers in descending order
+class DisplayNTimes:
+    def accept(self):
+        self.i=int(input("Enter the number of times to display"))
+        self.f=int(input("Enter the number of times to display"))
+    def process(self):
+        while self.f>=self.i:
+            print(self.f,end=" ")
+            self.f=self.f-1
+#initiate of obj
+d=DisplayNTimes()
+d.accept()
+d.process()
+
+
+
+
+6:
+#aim:program to display odd numbers in a range
+class DisplayOdd:
+    def __init__(self):
+        self.c=1
+    def accept(self):
+        self.n=int(input("initial value"))
+    def process(self):
+        while self.c<=self.n:
+            self.r=self.c%2
+            if self.r!=0:
+                print(self.c,end=" ")
+            self.c=self.c+1
+#initiate of obj
+d=DisplayOdd()
+d.accept()
+d.process()
+
+
+
+7:
+#aim:program to display sum of odd numbers in a range
+class DisplayOdd:
+    def __init__(self):
+        self.s=0
+    def accept(self):
+        self.i=int(input("initial value"))
+        self.f=int(input("final value  "))
+    def process(self):
+        while self.i<=self.f:
+            self.r=self.i%2
+            if self.r!=0:
+               print(self.i,end=" ")
+               self.s=self.s+self.i
+            self.i=self.i+1
+        print("\n sum= ",self.s)
+#initiate of obj
+d=DisplayOdd()
+d.accept()
+d.process()
+
+
+
+
+8:
+#aim:program to display whether a number is divisible by 2 and 5
+class DisplayOdd:
+    def accept(self):
+        self.i=int(input("enter the number"))
+    def process(self):
+        if self.i%2==0 and self.i%5==0:
+            print("n is  divisible")
+        else:
+            print("n is not divisible")
+#initiate of obj
+d=DisplayOdd()
+d.accept()
+d.process()
+

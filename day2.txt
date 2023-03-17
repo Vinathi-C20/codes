@@ -1,0 +1,107 @@
+1:
+#Aim:Program to find factors of given number 
+#Date:3-mar-2023
+#Author:Vinathi
+
+class Factors:
+    def __init__(self):
+        self.i=1
+    def accept(self):
+        self.n=int(input("enter the number"))
+    def process(self):
+        while self.i<=self.n:
+            self.r=self.n%self.i
+            if self.r==0:
+                print(self.i,end=" ")
+            self.i=self.i+1
+d=Factors()
+d.accept()
+d.process()
+
+
+
+
+
+
+
+2:
+#Aim:Program to find factors of given number and sum of them
+#Date:3-mar-2023
+#Author:Vinathi
+
+class Factors:
+    def __init__(self):
+        self.i=1
+        self.s=0
+    def accept(self):
+        self.n=int(input("enter the number"))
+    def process(self):
+        while self.i<=self.n:
+            self.r=self.n%self.i
+            if self.r==0:
+                print(self.i,end=" ")
+                self.s=self.s+self.i
+            self.i=self.i+1
+        print("\n sum=",self.s)
+d=Factors()
+d.accept()
+d.process()
+
+
+
+
+
+
+3:
+#Aim:Program to find whether given number is perfect number or not   [sum of factors excluding the num=num]
+#Date:3-mar-2023
+#Author:Vinathi
+
+class Factors:
+    def __init__(self):
+        self.i=1
+        self.s=0
+    def accept(self):
+        self.n=int(input("enter the number"))
+    def process(self):
+        while self.i<self.n:
+            self.r=self.n%self.i
+            if self.r==0:
+                self.s=self.s+self.i
+            self.i=self.i+1
+    def output(self):
+        if self.s==self.n:
+            print("given number is perfect number")
+        else:
+            print("given number is not a perfect number")
+d=Factors()
+d.accept()
+d.process()
+d.output()
+           
+
+
+4:
+#Aim:Program to find sum of digits of num
+#Date:3-mar-2023
+#Author:Vinathi
+
+class Factors:
+    def __init__(self):
+        self.s=0
+    def accept(self):
+        self.n=int(input("enter the number"))
+    def process(self):
+        while self.n>0:
+            self.r=self.n%10
+            self.s=self.s+self.r
+            self.n=self.n//10
+    def output(self):
+        print(self.s)
+            
+d=Factors()
+d.accept()
+d.process()
+d.output()
+
+            
